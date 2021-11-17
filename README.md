@@ -14,8 +14,8 @@ Para ejecutar el código de este repositorio, sigue los siguientes pasos.
 git clone https://github.com/cristobalgvera/react-state-management-learning.git
 cd react-state-management-learning
 
-npm i # or yarn
-npm run dev # or yarn dev
+npm i # yarn
+npm run dev # yarn dev
 ```
 
 Ten en cuenta que cambiando entre ramas podrás ver el código de otro tipo de implementaciones de estado descritas en el repositorio.
@@ -25,4 +25,4 @@ git branch --remote # Muestra las ramas del repositorio
 git checkout nombre_de_la_rama # Accede a la rama que quieras
 ```
 
-Si sólo quieres visualizar el código de una forma más cómoda que la interfaz de GitHub, sólo presiona `.` _(punto)_ mientras estás en este repositorio y serás redirigido a una versión online de _VS Code_.
+Si sólo quieres visualizar el código de una forma más cómoda que la interfaz de GitHub, presiona `.` _(punto)_ mientras estás en este repositorio y serás redirigido a una versión online de _VS Code_.
