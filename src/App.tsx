@@ -2,6 +2,7 @@ import { CodeBlock } from './components/CodeBlock/CodeBlock';
 import { Header } from './components/Header';
 import { Implementation } from './components/Implementation';
 import { Layout } from './components/Layout';
+import { Logo } from './components/Logo';
 import { useCodeLines } from './hooks/useCodeLines';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <CodeBlock codeLines={codeLines} />
         <Implementation>
           <p className="text-3xl font-semibold">Implementación</p>
+          <Logo />
         </Implementation>
       </main>
     </Layout>
