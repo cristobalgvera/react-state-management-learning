@@ -1,4 +1,8 @@
 [
+"interface CounterProps {",
+"  initialCount?: number;",
+"}",
+"",
 "/**",
 " * Local state can be defined in three forms:",
 " * 1. Declaring a local state variable as usual (e.g. `const variable = 'value'`)",
@@ -23,5 +27,6 @@
 "      </div>",
 "    </div>",
 "  );",
-"};"
+"};",
+""
 ]

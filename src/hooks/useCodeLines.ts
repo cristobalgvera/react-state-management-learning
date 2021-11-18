@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type CodeLineType = 'welcome';
+type CodeLineType = 'welcome' | 'local-state';
 
 const basePath = '../assets/code-lines';
 
