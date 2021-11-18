@@ -30,6 +30,11 @@ Si sólo quieres visualizar el código de una forma más cómoda que la interfaz
 ## :heavy_check_mark: TO DO
 
 - [ ] Crear una rama para cada tópico a explicar.
+  - [ ] Estado local.
+  - [ ] Estado global con Context API.
+  - [ ] Estado global con Redux.
+  - [ ] Estado global con Redux Toolkit.
+  - [ ] Estado global externo con Redux Toolkit Query.
 - [ ] Diseñar gráficas que detallen el proceso que está sucediendo para aquellos tópicos abstractos relacionados con estados.
-- [ ] Traspasar código de ejemplos y tareas a algún editor de código online para que pueda ser trabajado de forma ágil.
-- [ ] Definir la forma de abordar contenidos (estructura de la presentación, Kahoot!, ejemplos prácticos, actividades prácticas, entre otros).
+- [ ] Traspasar código de ejemplos y tareas a algún editor de código online _(CodePen, CodeSandbox u otro)_ para que pueda ser trabajado de forma ágil.
+- [ ] Definir la forma de abordar contenidos _(estructura de la presentación, Kahoot!, ejemplos prácticos, actividades prácticas, entre otros)._
