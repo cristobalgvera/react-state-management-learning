@@ -29,7 +29,7 @@ Si sólo quieres visualizar el código de una forma más cómoda que la interfaz
 
 ## :heavy_check_mark: TO DO
 
-El listado de tareas por realizar está en la página **[TO DO](assets/to-do.md)**. El siguiente listado representa el resumen por tópico.
+El listado de tareas por realizar está en la página **[TO DO](./assets/to-do.md)**. El siguiente listado representa el resumen por tópico.
 
 - [ ] :card_file_box: Organización
 - [ ] :star: Ejemplos en código
