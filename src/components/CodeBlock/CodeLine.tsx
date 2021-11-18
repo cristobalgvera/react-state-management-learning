@@ -4,11 +4,13 @@ interface CodeLineProps {
   isLastLine?: boolean;
 }
 
-const commentRegex = /^[(//)|(#)]/;
+const commentRegex = /^( *\/\/|#| *\/?\*)/;
 
 export const CodeLine = ({ code, lineNumber, isLastLine }: CodeLineProps) => (
-  <code className="flex gap-x-4 text-xl font-light text-white">
-    <span className="col-span-2 text-gray-500 select-none">{lineNumber}</span>
+  <code className="flex gap-x-4 text-xl font-light text-white w-max whitespace-pre-wrap">
+    <span className="col-span-2 w-6 text-gray-500 select-none">
+      {lineNumber}
+    </span>
     <span className={`${code.match(commentRegex) ? 'text-gray-400' : ''}`}>
       {code}
       {isLastLine && <span className="animate-ping select-none">█</span>}
