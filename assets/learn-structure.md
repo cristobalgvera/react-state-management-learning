@@ -2,11 +2,6 @@
 
 A continuación se presenta la estructura a seguir para el aprendizaje de los tópicos para la gestión de estado en React. Estos se muestran en el orden que debiesen ser abordados.
 
-## TODO
-
-- [ ] Diseñar gráficas que detallen el proceso que está sucediendo para aquellos tópicos abstractos relacionados con estados.
-- [ ] Crear una rama para cada tópico a explicar.
-
 ## Contenido
 
 ### Estado

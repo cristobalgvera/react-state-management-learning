@@ -26,3 +26,10 @@ git checkout nombre_de_la_rama # Accede a la rama que quieras
 ```
 
 Si sólo quieres visualizar el código de una forma más cómoda que la interfaz de GitHub, presiona `.` _(punto)_ mientras estás en este repositorio y serás redirigido a una versión online de _VS Code_.
+
+## :heavy_check_mark: TO DO
+
+- [ ] Crear una rama para cada tópico a explicar.
+- [ ] Diseñar gráficas que detallen el proceso que está sucediendo para aquellos tópicos abstractos relacionados con estados.
+- [ ] Traspasar código de ejemplos y tareas a algún editor de código online para que pueda ser trabajado de forma ágil.
+- [ ] Definir la forma de abordar contenidos (estructura de la presentación, Kahoot!, ejemplos prácticos, actividades prácticas, entre otros).
