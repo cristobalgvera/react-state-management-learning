@@ -16,7 +16,7 @@ Organización interna del tópico.
 
 Creación de ramas en el repositorio que ejemplifiquen cada tópico por abordar.
 
-- [ ] Crear rama ejemplo de estado local.
+- [x] Crear rama ejemplo de estado local ([rama](https://github.com/cristobalgvera/react-state-management-learning/tree/local-state)).
 - [ ] Crear rama ejemplo de estado global con Context API.
 - [ ] Crear rama ejemplo de estado global con Redux.
 - [ ] Crear rama ejemplo de estado global con Redux Toolkit.
