@@ -6,7 +6,7 @@ interface CounterProps {
 }
 
 /**
- * Local state can be defined in three forms:
+ * Local state can be defined in three ways:
  * 1. Declaring a local state variable as usual (e.g. `const variable = "value"`)
  * 2. Declaring a variable using `useState` hook (e.g. `const [variable, setVariable] = useState("value")`)
  * 3. Declaring a variable using `useReducer` hook (e.g. `const [variable, dispatch] = useReducer(reducer, "value")`)
