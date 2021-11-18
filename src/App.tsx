@@ -1,17 +1,24 @@
-import { CodeBlock } from './components/Code/CodeBlock';
+import { CodeBlock } from './components/CodeBlock/CodeBlock';
 import { Header } from './components/Header';
+import { Implementation } from './components/Implementation';
+import { Layout } from './components/Layout';
 import { Logo } from './components/Logo';
+import { useCodeLines } from './hooks/useCodeLines';
 
 function App() {
+  const codeLines = useCodeLines('welcome');
+
   return (
-    <div className="grid grid-flow-row h-screen py-32 items-center">
-      <Header title="Gestión de estados">
-        <Logo />
-      </Header>
-      <main className="flex justify-center self-start">
-        <CodeBlock />
+    <Layout>
+      <Header title="Gestión de estados" subtitle="Página de bienvenida" />
+      <main className="row-span-3 grid grid-cols-5 gap-x-16 mt-4 justify-center">
+        <CodeBlock codeLines={codeLines} />
+        <Implementation>
+          <p className="text-3xl font-semibold">Implementación</p>
+          <Logo />
+        </Implementation>
       </main>
-    </div>
+    </Layout>
   );
 }
 
