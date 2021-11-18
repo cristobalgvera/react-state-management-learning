@@ -29,12 +29,47 @@ Si sólo quieres visualizar el código de una forma más cómoda que la interfaz
 
 ## :heavy_check_mark: TO DO
 
-- [ ] Crear una rama para cada tópico a explicar.
-  - [ ] Estado local.
-  - [ ] Estado global con Context API.
-  - [ ] Estado global con Redux.
-  - [ ] Estado global con Redux Toolkit.
-  - [ ] Estado global externo con Redux Toolkit Query.
+### :card_file_box: Organización
+
+Organización interna del tópico.
+
+- [x] Definición de tareas base a realizar.
+- [x] Estimación de tiempo de obtención de contenidos y creación de la presentación _(se definió en **2 semanas**)_.
+- [x] Definir uso de Redux con enfoque moderno ~~o legacy~~ _(se utilizará **enfoque moderno**)_.
+- [x] Definir uso de TypeScript ~~o JavaScript~~ _(se utilizará **TypeScript**)_.
+
+### :star: Ejemplos en código
+
+Creación de ramas en el repositorio que ejemplifiquen cada tópico por abordar.
+
+- [ ] Estado local.
+- [ ] Estado global con Context API.
+- [ ] Estado global con Redux.
+- [ ] Estado global con Redux Toolkit.
+- [ ] Estado global externo con Redux Toolkit Query.
+
+### :clapper: Presentación
+
+Definiciones de estructura de presentación y contenido por presentar.
+
 - [ ] Diseñar gráficas que detallen el proceso que está sucediendo para aquellos tópicos abstractos relacionados con estados.
-- [ ] Traspasar código de ejemplos y tareas a algún editor de código online _(CodePen, CodeSandbox u otro)_ para que pueda ser trabajado de forma ágil.
-- [ ] Definir la forma de abordar contenidos _(estructura de la presentación, Kahoot!, ejemplos prácticos, actividades prácticas, entre otros)._
+  - [ ] Crear gráfica para la creación de estados locales.
+    - [ ] Añadir gráfica para el traspaso de estados locales entre componentes.
+  - [ ] Crear gráfica para la creación de estados globales.
+    - [ ] Añadir gráfica para el traspaso de estados globales entre componentes.
+  - [ ] Crear gráfica para la creación de estados globales externos.
+    - [ ] Añadir gráfica para el traspaso de estados globales externos entre componentes.
+- [ ] Coordinar la forma de abordar contenidos.
+  - [ ] Definir estructura de la presentación.
+  - [ ] Definir uso de Kahoot.
+  - [ ] Definir ejemplos prácticas por mostrar.
+  - [ ] Definir actividades prácticas por abordar.
+
+### :dizzy: Actividad integradora
+
+Actividad o actividades por entregar en la clase para ejercitación de contenidos.
+
+- [ ] Traspasar código de ejemplos a algún editor de código online (CodePen, CodeSandbox u otro) para que pueda ser trabajado de forma ágil.
+- [ ] Coordinar uso de Redux en la aplicación a desarrollar mediante la actividad integradora.
+  - [ ] Definir uso de Redux Toolkit.
+  - [ ] Definir uso de Redux Toolkit Query (por evaluar su uso).
