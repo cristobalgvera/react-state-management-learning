@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { NestableComponent } from '../NestableComponent/NestableComponent';
+import { DummyComponentOne } from '../PassStateComponents/DummyComponentOne';
 import { Button } from '../UI/Button';
 
 interface CounterProps {
@@ -27,6 +29,9 @@ export const LocalStateCounter = ({ initialCount = 0 }: CounterProps) => {
         <Button onClick={handleDecrement}>-</Button>
         <Button onClick={handleIncrement}>+</Button>
       </div>
+      <NestableComponent>
+        <DummyComponentOne count={count} />
+      </NestableComponent>
     </div>
   );
 };
