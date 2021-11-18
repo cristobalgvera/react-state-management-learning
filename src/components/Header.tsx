@@ -6,7 +6,7 @@ interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ title, children }) => (
   <header className="flex flex-col justify-center items-center gap-y-10">
-    <h1 className="font-extrabold text-6xl animate-bounce">{title}</h1>
+    <h1 className="font-extrabold text-6xl">{title}</h1>
     {children}
   </header>
 );
