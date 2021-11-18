@@ -7,7 +7,7 @@ import { NestableComponent } from './components/NestableComponent/NestableCompon
 import { useCodeLines } from './hooks/useCodeLines';
 
 function App() {
-  const codeLines = useCodeLines('local-state');
+  const codeLines = useCodeLines('pass-local-state');
 
   return (
     <Layout>
