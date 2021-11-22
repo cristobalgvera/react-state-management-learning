@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type CodeLineType = 'welcome';
+type CodeLineType = 'welcome' | 'global-state-context-api';
 
 const basePath = '../assets/code-lines';
 
