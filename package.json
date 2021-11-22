@@ -7,8 +7,12 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@types/react-syntax-highlighter": "^13.5.2",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-markdown": "^7.1.0",
+    "react-syntax-highlighter": "^15.4.5",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",

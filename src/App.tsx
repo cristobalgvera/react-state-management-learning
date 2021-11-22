@@ -3,10 +3,10 @@ import { CounterImplementation } from './components/Counter/CounterImplementatio
 import { Header } from './components/Header';
 import { Implementation } from './components/Implementation';
 import { Layout } from './components/Layout';
-import { useCodeLines } from './hooks/useCodeLines';
+import { useCodeMarkdown } from './hooks/useCodeMarkdown';
 
 function App() {
-  const codeLines = useCodeLines('global-state-context-api');
+  const codeMarkdown = useCodeMarkdown('welcome');
 
   return (
     <Layout>
@@ -15,7 +15,7 @@ function App() {
         subtitle="Estado global - Context API"
       />
       <main className="row-span-3 grid grid-cols-5 gap-x-16 mt-4 justify-center items-center">
-        <CodeBlock codeLines={codeLines} />
+        <CodeBlock codeMarkdown={codeMarkdown} />
         <Implementation>
           <CounterImplementation />
         </Implementation>
