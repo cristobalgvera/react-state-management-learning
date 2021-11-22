@@ -1,18 +1,12 @@
-import { CodeLine } from './CodeLine';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface CodeBlockProps {
-  codeLines: string[];
+  codeMarkdown: string;
 }
 
-export const CodeBlock = ({ codeLines }: CodeBlockProps) => (
+export const CodeBlock = ({ codeMarkdown }: CodeBlockProps) => (
   <div className="col-span-3 bg-indigo-900 max-w-full h-auto max-h-[30rem] rounded py-5 px-6 shadow-xl overflow-auto">
-    {codeLines.map((code, index) => (
-      <CodeLine
-        key={index}
-        code={code}
-        lineNumber={index + 1}
-        isLastLine={index + 1 === codeLines.length}
-      />
-    ))}
+    <ReactMarkdown remarkPlugins={[remarkGfm]}>{codeMarkdown}</ReactMarkdown>
   </div>
 );
