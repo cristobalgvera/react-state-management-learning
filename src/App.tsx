@@ -4,10 +4,10 @@ import { Implementation } from './components/Implementation';
 import { Layout } from './components/Layout';
 import { LocalStateCounter } from './components/LocalStateCounter/LocalStateCounter';
 import { NestableComponent } from './components/NestableComponent/NestableComponent';
-import { useCodeLines } from './hooks/useCodeLines';
+import { useCodeMarkdown } from './hooks/useCodeMarkdown';
 
 function App() {
-  const codeLines = useCodeLines('pass-local-state');
+  const codeMarkdown = useCodeMarkdown('welcome');
 
   return (
     <Layout>
@@ -16,7 +16,7 @@ function App() {
         subtitle="Traspaso de estado local entre componentes"
       />
       <main className="row-span-3 grid grid-cols-5 gap-x-16 mt-4 justify-center items-center">
-        <CodeBlock codeLines={codeLines} />
+        <CodeBlock codeMarkdown={codeMarkdown} />
         <Implementation>
           <NestableComponent borderColor="pink">
             <LocalStateCounter />

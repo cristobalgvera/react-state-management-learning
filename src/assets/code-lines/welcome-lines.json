@@ -1,8 +1,0 @@
-[
-    "# Para visualizar las implementaciones de los manejos de estados",
-    "git branch --remote",
-    "git checkout rama_por_visualizar",
-    "",
-    "# Por ejemplo",
-    "git checkout local-state"
-]
