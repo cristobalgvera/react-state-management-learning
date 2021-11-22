@@ -2,14 +2,14 @@ import { createContext, FC, useContext, useState } from 'react';
 
 type CounterContextType = {
   count: number;
-  increment: (amount?: number) => void;
-  decrement: (amount?: number) => void;
+  incrementCount: (amount?: number) => void;
+  decrementCount: (amount?: number) => void;
 };
 
 const initialState: CounterContextType = {
   count: 0,
-  increment: () => {},
-  decrement: () => {},
+  incrementCount: () => {},
+  decrementCount: () => {},
 };
 
 const CounterContext = createContext<CounterContextType>({ ...initialState });
@@ -17,11 +17,13 @@ const CounterContext = createContext<CounterContextType>({ ...initialState });
 export const CounterProvider: FC = ({ children }) => {
   const [count, setCount] = useState(0);
 
-  const increment = (amount = 1) => setCount((prevCount) => prevCount + amount);
-  const decrement = (amount = 1) => setCount((prevCount) => prevCount - amount);
+  const incrementCount = (amount = 1) =>
+    setCount((prevCount) => prevCount + amount);
+  const decrementCount = (amount = 1) =>
+    setCount((prevCount) => prevCount - amount);
 
   return (
-    <CounterContext.Provider value={{ count, increment, decrement }}>
+    <CounterContext.Provider value={{ count, incrementCount, decrementCount }}>
       {children}
     </CounterContext.Provider>
   );
