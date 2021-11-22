@@ -2,9 +2,9 @@ import { createContext, FC, useContext, useReducer } from 'react';
 
 type CounterContextType = {
   state: CounterStateType;
-  increment: (amount?: number) => void;
-  decrement: (amount?: number) => void;
-  reset: () => void;
+  incrementCount: (amount?: number) => void;
+  decrementCount: (amount?: number) => void;
+  resetCount: () => void;
 };
 
 type CounterStateType = {
@@ -36,24 +36,26 @@ const counterReducer = (state: CounterStateType, action: CounterActionType) => {
 
 const CounterContext = createContext<CounterContextType>({
   state: { ...defaultInitialState },
-  decrement: () => {},
-  increment: () => {},
-  reset: () => {},
+  decrementCount: () => {},
+  incrementCount: () => {},
+  resetCount: () => {},
 });
 
 export const CounterProvider: FC = ({ children }) => {
   const [state, dispatch] = useReducer(counterReducer, defaultInitialState);
 
-  const increment = (amount?: number) =>
+  const incrementCount = (amount?: number) =>
     dispatch({ type: 'increment', amount });
 
-  const decrement = (amount?: number) =>
+  const decrementCount = (amount?: number) =>
     dispatch({ type: 'decrement', amount });
 
-  const reset = () => dispatch({ type: 'reset' });
+  const resetCount = () => dispatch({ type: 'reset' });
 
   return (
-    <CounterContext.Provider value={{ state, increment, decrement, reset }}>
+    <CounterContext.Provider
+      value={{ state, incrementCount, decrementCount, resetCount }}
+    >
       {children}
     </CounterContext.Provider>
   );
@@ -69,8 +71,8 @@ const useCounter = () => {
 };
 
 export const useCounterAction = () => {
-  const { increment, decrement, reset } = useCounter();
-  return { increment, decrement, reset };
+  const { incrementCount, decrementCount, resetCount } = useCounter();
+  return { incrementCount, decrementCount, resetCount };
 };
 
 export function useCounterState<T>(
