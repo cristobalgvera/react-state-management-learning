@@ -7,7 +7,7 @@ import { NestableComponent } from './components/NestableComponent/NestableCompon
 import { useCodeMarkdown } from './hooks/useCodeMarkdown';
 
 function App() {
-  const codeMarkdown = useCodeMarkdown('welcome');
+  const codeMarkdown = useCodeMarkdown('local-state');
 
   return (
     <Layout>
