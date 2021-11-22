@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 
-type CodeMarkdownType = 'welcome' | 'global-state-context-api';
+type CodeMarkdownType =
+  | 'welcome'
+  | 'global-state-context-api'
+  | 'global-state-context-api-with-reducer';
 
 const basePath = 'src/assets/code-markdown';
 

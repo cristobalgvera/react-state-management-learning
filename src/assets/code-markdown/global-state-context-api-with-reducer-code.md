@@ -1,5 +1,6 @@
-import { createContext, FC, useContext, useReducer } from 'react';
+src/context/counterContext.tsx
 
+```tsx
 type CounterContextType = {
   state: CounterStateType;
   increment: (amount?: number) => void;
@@ -79,3 +80,72 @@ export function useCounterState<T>(
   const { state } = useCounter();
   return selector(state);
 }
+```
+
+src/component/Counter/CounterImplementation.tsx
+
+```tsx
+export const CounterImplementation = () => (
+  <CounterProvider>
+    <NestableComponent>
+      Componente 1
+      <Count />
+      <NestableComponent borderColor="green">
+        Componente 2
+        <NestableComponent borderColor="pink">
+          Componente 3
+          <NestableComponent borderColor="purple">
+            Componente 4
+            <NestableComponent borderColor="red">
+              Componente 5
+              <CountActions />
+            </NestableComponent>
+          </NestableComponent>
+          <CountReset />
+        </NestableComponent>
+      </NestableComponent>
+    </NestableComponent>
+  </CounterProvider>
+);
+```
+
+src/component/Counter/Count.tsx
+
+```tsx
+export const Count = () => {
+  const count = useCounterState((state) => state.count);
+  return (
+    <span className="font-bold text-2xl">
+      <span className="text-yellow-600">➡ </span>
+      {count}
+    </span>
+  );
+};
+```
+
+src/component/Counter/CountActions.tsx
+
+```tsx
+export const CountActions = () => {
+  const { decrement, increment } = useCounterAction();
+  return (
+    <div className="flex gap-x-4 mt-4">
+      <Button onClick={() => decrement()}>-</Button>
+      <Button onClick={() => increment()}>+</Button>
+    </div>
+  );
+};
+```
+
+src/component/Counter/CountReset.tsx
+
+```tsx
+export const CountReset = () => {
+  const { reset } = useCounterAction();
+  return (
+    <div className="mt-4">
+      <Button onClick={reset}>Reset</Button>
+    </div>
+  );
+};
+```

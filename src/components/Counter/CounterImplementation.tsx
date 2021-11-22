@@ -2,6 +2,7 @@ import { CounterProvider } from '../../context/counterContext';
 import { NestableComponent } from '../NestableComponent/NestableComponent';
 import { Count } from './Count';
 import { CountActions } from './CountActions';
+import { CountReset } from './CountReset';
 
 export const CounterImplementation = () => (
   <CounterProvider>
@@ -19,6 +20,7 @@ export const CounterImplementation = () => (
               <CountActions />
             </NestableComponent>
           </NestableComponent>
+          <CountReset />
         </NestableComponent>
       </NestableComponent>
     </NestableComponent>
