@@ -3,14 +3,14 @@ src/context/counterContext.tsx
 ```tsx
 type CounterContextType = {
   count: number;
-  increment: (amount?: number) => void;
-  decrement: (amount?: number) => void;
+  incrementCount: (amount?: number) => void;
+  decrementCount: (amount?: number) => void;
 };
 
 const initialState: CounterContextType = {
   count: 0,
-  increment: () => {},
-  decrement: () => {},
+  incrementCount: () => {},
+  decrementCount: () => {},
 };
 
 const CounterContext = createContext<CounterContextType>({ ...initialState });
@@ -18,11 +18,13 @@ const CounterContext = createContext<CounterContextType>({ ...initialState });
 export const CounterProvider: FC = ({ children }) => {
   const [count, setCount] = useState(0);
 
-  const increment = (amount = 1) => setCount((prevCount) => prevCount + amount);
-  const decrement = (amount = 1) => setCount((prevCount) => prevCount - amount);
+  const incrementCount = (amount = 1) =>
+    setCount((prevCount) => prevCount + amount);
+  const decrementCount = (amount = 1) =>
+    setCount((prevCount) => prevCount - amount);
 
   return (
-    <CounterContext.Provider value={{ count, increment, decrement }}>
+    <CounterContext.Provider value={{ count, incrementCount, decrementCount }}>
       {children}
     </CounterContext.Provider>
   );
@@ -82,11 +84,11 @@ src/component/Counter/CountActions.tsx
 
 ```tsx
 export const CountActions = () => {
-  const { increment, decrement } = useCounter();
+  const { incrementCount, decrementCount } = useCounter();
   return (
     <div className="flex gap-x-4 mt-4">
-      <Button onClick={() => decrement()}>-</Button>
-      <Button onClick={() => increment()}>+</Button>
+      <Button onClick={() => decrementCount()}>-</Button>
+      <Button onClick={() => incrementCount()}>+</Button>
     </div>
   );
 };
