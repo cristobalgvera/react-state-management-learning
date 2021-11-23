@@ -10,7 +10,10 @@ function App() {
 
   return (
     <Layout>
-      <Header title="Gestión de estados" subtitle="Estado global con Redux" />
+      <Header
+        title="Gestión de estados"
+        subtitle="Estado global con Redux Toolkit"
+      />
       <main className="row-span-3 grid grid-cols-5 gap-x-16 mt-4 justify-center items-center">
         <CodeBlock codeMarkdown={codeMarkdown} />
         <Implementation>
