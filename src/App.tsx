@@ -3,6 +3,7 @@ import { Counter } from './components/Counter';
 import { Header } from './components/Header';
 import { Implementation } from './components/Implementation';
 import { Layout } from './components/Layout';
+import { PokemonList } from './components/Pokemon/PokemonList';
 import { useCodeMarkdown } from './hooks/useCodeMarkdown';
 
 function App() {
@@ -14,11 +15,18 @@ function App() {
         title="Gestión de estados"
         subtitle="Estado global con Redux Toolkit"
       />
-      <main className="row-span-3 grid grid-cols-5 gap-x-16 mt-4 justify-center items-center">
-        <CodeBlock codeMarkdown={codeMarkdown} />
-        <Implementation>
-          <Counter />
-        </Implementation>
+      <main className="row-span-6 mt-4">
+        <div className="grid grid-cols-5 gap-x-16 justify-center items-center">
+          <CodeBlock codeMarkdown={codeMarkdown} />
+          <Implementation>
+            <Counter />
+          </Implementation>
+        </div>
+        <div>
+          <Implementation fullRow>
+            <PokemonList />
+          </Implementation>
+        </div>
       </main>
     </Layout>
   );
