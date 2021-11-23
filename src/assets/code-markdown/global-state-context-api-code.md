@@ -1,6 +1,8 @@
 src/context/counterContext.tsx
 
 ```tsx
+import { createContext, FC, useContext, useState } from 'react';
+
 type CounterContextType = {
   count: number;
   incrementCount: (amount?: number) => void;
@@ -43,6 +45,11 @@ export const useCounter = () => {
 src/component/Counter/CounterImplementation.tsx
 
 ```tsx
+import { CounterProvider } from '../../context/counterContext';
+import { NestableComponent } from '../NestableComponent/NestableComponent';
+import { Count } from './Count';
+import { CountActions } from './CountActions';
+
 export const CounterImplementation = () => (
   <CounterProvider>
     <NestableComponent>
@@ -69,6 +76,8 @@ export const CounterImplementation = () => (
 src/component/Counter/Count.tsx
 
 ```tsx
+import { useCounter } from '../../context/counterContext';
+
 export const Count = () => {
   const { count } = useCounter();
   return (
@@ -83,6 +92,9 @@ export const Count = () => {
 src/component/Counter/CountActions.tsx
 
 ```tsx
+import { useCounter } from '../../context/counterContext';
+import { Button } from '../UI/Button';
+
 export const CountActions = () => {
   const { incrementCount, decrementCount } = useCounter();
   return (
