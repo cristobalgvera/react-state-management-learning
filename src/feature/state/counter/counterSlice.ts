@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import type { RootState } from '../../store';
 
 type CountPayload = number | undefined;
 
@@ -18,9 +17,11 @@ export const counterSlice = createSlice({
     },
     decrementCount: (state, action: PayloadAction<CountPayload>) => {
       state.count -= action.payload ?? 1;
+      if (state.count <= 0) state.count = 1;
     },
     setCount: (state, action: PayloadAction<number>) => {
       state.count = action.payload;
+      if (state.count <= 0) state.count = 1;
     },
     resetCount: (state) => {
       state.count = defaultInitialState.count;
@@ -30,7 +31,5 @@ export const counterSlice = createSlice({
 
 export const { incrementCount, decrementCount, setCount, resetCount } =
   counterSlice.actions;
-
-export const selectCount = (state: RootState) => state.counter;
 
 export default counterSlice.reducer;
