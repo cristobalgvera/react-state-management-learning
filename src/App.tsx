@@ -6,7 +6,7 @@ import { Layout } from './components/Layout';
 import { useCodeMarkdown } from './hooks/useCodeMarkdown';
 
 function App() {
-  const codeMarkdown = useCodeMarkdown('global-state-redux');
+  const codeMarkdown = useCodeMarkdown('global-state-redux-toolkit');
 
   return (
     <Layout>

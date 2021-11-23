@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type CodeMarkdownType = 'welcome' | 'global-state-redux';
+type CodeMarkdownType = 'welcome' | 'global-state-redux-toolkit';
 
 const basePath = 'src/assets/code-markdown';
 
