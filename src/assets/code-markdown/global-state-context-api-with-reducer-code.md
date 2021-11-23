@@ -1,6 +1,8 @@
 src/context/counterContext.tsx
 
 ```tsx
+import { createContext, FC, useContext, useReducer } from 'react';
+
 type CounterContextType = {
   state: CounterStateType;
   incrementCount: (amount?: number) => void;
@@ -87,6 +89,12 @@ export function useCounterState<T>(
 src/component/Counter/CounterImplementation.tsx
 
 ```tsx
+import { CounterProvider } from '../../context/counterContext';
+import { NestableComponent } from '../NestableComponent/NestableComponent';
+import { Count } from './Count';
+import { CountActions } from './CountActions';
+import { CountReset } from './CountReset';
+
 export const CounterImplementation = () => (
   <CounterProvider>
     <NestableComponent>
@@ -114,6 +122,8 @@ export const CounterImplementation = () => (
 src/component/Counter/Count.tsx
 
 ```tsx
+import { useCounterState } from '../../context/counterContext';
+
 export const Count = () => {
   const count = useCounterState((state) => state.count);
   return (
@@ -128,6 +138,9 @@ export const Count = () => {
 src/component/Counter/CountActions.tsx
 
 ```tsx
+import { useCounterAction } from '../../context/counterContext';
+import { Button } from '../UI/Button';
+
 export const CountActions = () => {
   const { decrementCount, incrementCount } = useCounterAction();
   return (
@@ -142,6 +155,9 @@ export const CountActions = () => {
 src/component/Counter/CountReset.tsx
 
 ```tsx
+import { useCounterAction } from '../../context/counterContext';
+import { Button } from '../UI/Button';
+
 export const CountReset = () => {
   const { resetCount } = useCounterAction();
   return (
