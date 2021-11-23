@@ -11,7 +11,7 @@ export const CountSet = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleSetCount = () => {
-    const count = Number(inputRef.current?.value) ?? defaultValue;
+    const count = Number(inputRef.current?.value ?? defaultValue);
     dispatch(setCount(count));
   };
 
