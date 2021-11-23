@@ -18,10 +18,10 @@ Creación de ramas en el repositorio que ejemplifiquen cada tópico por abordar.
 
 - [x] Crear rama ejemplo de estado local ([rama](https://github.com/cristobalgvera/react-state-management-learning/tree/local-state)).
   - [x] Crear rama ejemplo de traspaso de estado local ([rama](https://github.com/cristobalgvera/react-state-management-learning/tree/pass-local-state)).
-- [x] Crear rama ejemplo de estado global con Context API.
-- [x] Crear rama ejemplo de estado global con Redux.
-- [x] Crear rama ejemplo de estado global con Redux Toolkit.
-- [x] Crear rama ejemplo de estado global externo con Redux Toolkit Query.
+- [x] Crear rama ejemplo de estado global con Context API ([rama](https://github.com/cristobalgvera/react-state-management-learning/tree/global-state-context-api-reducer)).
+- [x] Crear rama ejemplo de estado global con Redux ([rama](https://github.com/cristobalgvera/react-state-management-learning/tree/global-state-redux)).
+- [x] Crear rama ejemplo de estado global con Redux Toolkit ([rama](https://github.com/cristobalgvera/react-state-management-learning/tree/global-state-redux-toolkit)).
+- [x] Crear rama ejemplo de estado global externo con Redux Toolkit Query ([rama](https://github.com/cristobalgvera/react-state-management-learning/tree/global-external-state-rtk-query)).
 
 ## :clapper: Presentación
 
