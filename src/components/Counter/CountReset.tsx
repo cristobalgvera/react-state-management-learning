@@ -1,5 +1,5 @@
-import { resetCount } from '../../state/counter/counterActions';
-import { useAppDispatch } from '../../state/hooks';
+import { resetCount } from '../../feature/counter/counterSlice';
+import { useAppDispatch } from '../../feature/hooks';
 import { Button } from '../UI/Button';
 
 export const CountReset = () => {

@@ -1,8 +1,8 @@
 import {
   decrementCount,
   incrementCount,
-} from '../../state/counter/counterActions';
-import { useAppDispatch } from '../../state/hooks';
+} from '../../feature/counter/counterSlice';
+import { useAppDispatch } from '../../feature/hooks';
 import { Button } from '../UI/Button';
 
 export const CountActions = () => {

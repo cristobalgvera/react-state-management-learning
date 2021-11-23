@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { setCount } from '../../state/counter/counterActions';
-import { useAppDispatch } from '../../state/hooks';
+import { setCount } from '../../feature/counter/counterSlice';
+import { useAppDispatch } from '../../feature/hooks';
 import { Button } from '../UI/Button';
 
 const defaultValue = 0;

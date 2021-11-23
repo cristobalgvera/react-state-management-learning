@@ -1,4 +1,4 @@
-import { useAppSelector } from '../../state/hooks';
+import { useAppSelector } from '../../feature/hooks';
 
 export const Count = () => {
   const { count } = useAppSelector((state) => state.counter);
