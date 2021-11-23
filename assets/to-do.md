@@ -21,7 +21,7 @@ Creación de ramas en el repositorio que ejemplifiquen cada tópico por abordar.
 - [x] Crear rama ejemplo de estado global con Context API.
 - [x] Crear rama ejemplo de estado global con Redux.
 - [x] Crear rama ejemplo de estado global con Redux Toolkit.
-- [ ] Crear rama ejemplo de estado global externo con Redux Toolkit Query.
+- [x] Crear rama ejemplo de estado global externo con Redux Toolkit Query.
 
 ## :clapper: Presentación
 
