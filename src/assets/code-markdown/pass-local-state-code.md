@@ -1,4 +1,11 @@
+src/components/Counter/Counter.tsx
+
 ```tsx
+import { useState } from 'react';
+import { NestableComponent } from '../NestableComponent/NestableComponent';
+import { DummyComponentOne } from '../PassStateComponents/DummyComponentOne';
+import { Button } from '../UI/Button';
+
 interface CounterProps {
   initialCount?: number;
 }
@@ -9,7 +16,7 @@ interface CounterProps {
  * 2. Declaring a variable using `useState` hook (e.g. `const [variable, setVariable] = useState("value")`)
  * 3. Declaring a variable using `useReducer` hook (e.g. `const [variable, dispatch] = useReducer(reducer, "value")`)
  */
-export const LocalStateCounter = ({ initialCount = 0 }: CounterProps) => {
+export const Counter = ({ initialCount = 0 }: CounterProps) => {
   // Local state
   const [count, setCount] = useState(initialCount);
 

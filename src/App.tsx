@@ -2,7 +2,7 @@ import { CodeBlock } from './components/CodeBlock/CodeBlock';
 import { Header } from './components/Header';
 import { Implementation } from './components/Implementation';
 import { Layout } from './components/Layout';
-import { LocalStateCounter } from './components/LocalStateCounter/LocalStateCounter';
+import { Counter } from './components/Counter/Counter';
 import { NestableComponent } from './components/NestableComponent/NestableComponent';
 import { useCodeMarkdown } from './hooks/useCodeMarkdown';
 
@@ -19,7 +19,7 @@ function App() {
         <CodeBlock codeMarkdown={codeMarkdown} />
         <Implementation>
           <NestableComponent borderColor="pink">
-            <LocalStateCounter />
+            <Counter />
           </NestableComponent>
         </Implementation>
       </main>

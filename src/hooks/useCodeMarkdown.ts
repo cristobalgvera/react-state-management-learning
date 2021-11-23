@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type CodeMarkdownType = 'welcome' | 'local-state' | 'pass-local-state';
+type CodeMarkdownType = 'welcome' | 'pass-local-state';
 
 const basePath = 'src/assets/code-markdown';
 
