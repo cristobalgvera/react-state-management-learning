@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { setCount } from '../../feature/counter/counterSlice';
+import { setCount } from '../../feature/state/counter/counterSlice';
 import { useAppDispatch } from '../../feature/hooks';
 import { Button } from '../UI/Button';
 

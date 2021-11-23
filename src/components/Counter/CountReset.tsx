@@ -1,4 +1,4 @@
-import { resetCount } from '../../feature/counter/counterSlice';
+import { resetCount } from '../../feature/state/counter/counterSlice';
 import { useAppDispatch } from '../../feature/hooks';
 import { Button } from '../UI/Button';
 

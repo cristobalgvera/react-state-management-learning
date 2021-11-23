@@ -1,7 +1,7 @@
 import {
   decrementCount,
   incrementCount,
-} from '../../feature/counter/counterSlice';
+} from '../../feature/state/counter/counterSlice';
 import { useAppDispatch } from '../../feature/hooks';
 import { Button } from '../UI/Button';
 
