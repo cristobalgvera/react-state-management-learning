@@ -2,7 +2,7 @@ import { CodeBlock } from './components/CodeBlock/CodeBlock';
 import { Header } from './components/Header';
 import { Implementation } from './components/Implementation';
 import { Layout } from './components/Layout';
-import { LocalStateCounter } from './components/LocalStateCounter/LocalStateCounter';
+import { Counter } from './components/Counter/Counter';
 import { useCodeMarkdown } from './hooks/useCodeMarkdown';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <main className="row-span-3 grid grid-cols-5 gap-x-16 mt-4 justify-center items-center">
         <CodeBlock codeMarkdown={codeMarkdown} />
         <Implementation>
-          <LocalStateCounter />
+          <Counter />
         </Implementation>
       </main>
     </Layout>
