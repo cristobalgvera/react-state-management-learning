@@ -7,7 +7,7 @@ import { PokemonList } from './components/Pokemon/PokemonList';
 import { useCodeMarkdown } from './hooks/useCodeMarkdown';
 
 function App() {
-  const codeMarkdown = useCodeMarkdown('global-state-redux-toolkit');
+  const codeMarkdown = useCodeMarkdown('global-state-redux-toolkit-query');
 
   return (
     <Layout>

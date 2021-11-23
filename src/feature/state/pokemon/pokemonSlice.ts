@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import type { Pokemon } from '../../../types/Pokemon';
+import type { Pokemon } from '../../../types/pokemon';
 
 type PokemonState = {
   selectedPokemon?: Pokemon;
