@@ -11,3 +11,7 @@ body {
 body {
   @apply text-gray-50 bg-gray-700 font-medium leading-normal;
 }
+
+html {
+  scroll-behavior: smooth;
+}
