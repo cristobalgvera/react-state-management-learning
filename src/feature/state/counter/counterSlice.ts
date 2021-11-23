@@ -7,7 +7,7 @@ interface CounterState {
   count: number;
 }
 
-const defaultInitialState: CounterState = { count: 0 };
+const defaultInitialState: CounterState = { count: 10 };
 
 export const counterSlice = createSlice({
   name: 'counter',

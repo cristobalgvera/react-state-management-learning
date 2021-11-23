@@ -3,7 +3,7 @@ import { setCount } from '../../feature/state/counter/counterSlice';
 import { useAppDispatch } from '../../feature/hooks';
 import { Button } from '../UI/Button';
 
-const defaultValue = 0;
+const defaultValue = 10;
 
 export const CountSet = () => {
   const dispatch = useAppDispatch();

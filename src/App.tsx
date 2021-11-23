@@ -13,7 +13,7 @@ function App() {
     <Layout>
       <Header
         title="Gestión de estados"
-        subtitle="Estado global con Redux Toolkit"
+        subtitle="Estado global externo con Redux Toolkit Query"
       />
       <main className="row-span-6 mt-4">
         <div className="grid grid-cols-5 gap-x-16 justify-center items-center">
