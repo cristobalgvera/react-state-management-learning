@@ -9,13 +9,13 @@ export function counterReducer(
   action: CounterAction,
 ) {
   switch (action.type) {
-    case 'INCREMENT':
+    case 'counter/incrementCount':
       return { ...state, count: state.count + (action.payload ?? 1) };
-    case 'DECREMENT':
+    case 'counter/decrementCount':
       return { ...state, count: state.count - (action.payload ?? 1) };
-    case 'SET':
+    case 'counter/setCount':
       return { ...state, count: action.payload };
-    case 'RESET':
+    case 'counter/resetCount':
       return { ...defaultInitialState };
     default:
       return state;

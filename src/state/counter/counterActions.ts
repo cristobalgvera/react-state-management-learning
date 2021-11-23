@@ -1,9 +1,13 @@
 type CounterDefaultPayload = { payload?: number };
 
-type IncrementAction = { type: 'INCREMENT' } & CounterDefaultPayload;
-type DecrementAction = { type: 'DECREMENT' } & CounterDefaultPayload;
-type SetAction = { type: 'SET' } & Required<CounterDefaultPayload>;
-type ResetAction = { type: 'RESET' };
+type IncrementAction = {
+  type: 'counter/incrementCount';
+} & CounterDefaultPayload;
+type DecrementAction = {
+  type: 'counter/decrementCount';
+} & CounterDefaultPayload;
+type SetAction = { type: 'counter/setCount' } & Required<CounterDefaultPayload>;
+type ResetAction = { type: 'counter/resetCount' };
 
 export type CounterAction =
   | IncrementAction
@@ -12,20 +16,20 @@ export type CounterAction =
   | ResetAction;
 
 export const incrementCount = (payload?: number): IncrementAction => ({
-  type: 'INCREMENT',
+  type: 'counter/incrementCount',
   payload,
 });
 
 export const decrementCount = (payload?: number): DecrementAction => ({
-  type: 'DECREMENT',
+  type: 'counter/decrementCount',
   payload,
 });
 
 export const setCount = (payload: number): SetAction => ({
-  type: 'SET',
+  type: 'counter/setCount',
   payload,
 });
 
 export const resetCount = (): ResetAction => ({
-  type: 'RESET',
+  type: 'counter/resetCount',
 });
