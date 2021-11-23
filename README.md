@@ -32,6 +32,6 @@ Si sólo quieres visualizar el código de una forma más cómoda que la interfaz
 El listado de tareas por realizar está en la página **[TO DO](./assets/to-do.md)**. El siguiente listado representa el resumen por tópico.
 
 - [ ] :card_file_box: Organización
-- [ ] :star: Ejemplos en código
+- [x] :star: Ejemplos en código
 - [ ] :clapper: Presentación
 - [ ] :dizzy: Actividad integradora
